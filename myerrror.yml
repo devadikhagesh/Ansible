@@ -10,8 +10,8 @@
       apt:
         nameeee: tree
         state: present
-      ignore_errors: yes
     - name : i want to install wget
       apt:
         name: wget
         state: present
+      ignore_errors: yes
