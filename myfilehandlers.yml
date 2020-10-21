@@ -2,4 +2,13 @@
 - hosts: 172.31.45.52
   become: yes
   tasks:
-  - include_tasks: myfile.yml
+  - include: myfile.yml
+  
+  - name: i want to install apache2 on ubuntu
+    apt:
+      name: apache2
+      state: present
+  - name: i want restart my apache2 webserver
+    service:
+      name: apache2
+      state: restarted
