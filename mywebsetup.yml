@@ -2,4 +2,4 @@
 - hosts: 172.31.45.52
   become: yes
   roles:
-    - mywebrole.yml
+    - mywebrole
