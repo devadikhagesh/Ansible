@@ -14,7 +14,7 @@
     template:
       src: index.j2
       dest: /var/www/html/index.html
-    notif: restartwebserver
+    notify: restartwebserver
 
   handlers:
     - name: i want restart my apache2 webserver
